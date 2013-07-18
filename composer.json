@@ -1,0 +1,5 @@
+{
+    "require": {
+            "skyzyx/alfred-workflow-builder": "1.0.*"
+        }
+}
