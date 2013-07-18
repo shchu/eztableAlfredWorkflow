@@ -40,7 +40,7 @@
 				<key>runningsubtext</key>
 				<string>Search...</string>
 				<key>script</key>
-				<string>php /Users/mac/workspace/alfred_plugin/eztableAlfredWorkflow/main.php "{query}"</string>
+				<string>php main.php "{query}"</string>
 				<key>title</key>
 				<string>EZTABLE Restaurant id</string>
 				<key>type</key>
