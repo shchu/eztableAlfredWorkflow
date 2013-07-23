@@ -72,6 +72,33 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>ez search</string>
+				<key>runningsubtext</key>
+				<string>Search...</string>
+				<key>script</key>
+				<string>php search.php "{query}"</string>
+				<key>title</key>
+				<string>EZTABLE Restaurant keyword</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -81,6 +108,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
