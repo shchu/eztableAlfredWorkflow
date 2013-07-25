@@ -7,7 +7,7 @@ $query = $argv[1];
 $w = new Workflow();
 $resultArray = array(
     'uid'          => 'itemuid',
-    'arg'          => 'itemarg',
+    // 'arg'          => 'itemarg',
     'valid'        => 'yes',
     'autocomplete' => 'autocomplete',
     'icon'         => 'icon.png',
@@ -36,7 +36,7 @@ if ($restaurantInfo['status'] == "OK" && $restaurantInfo['data']['numFound'] > 0
         $resultTemplate = $resultArray;
         $resultTemplate['title'] = $doc['name'];
         $resultTemplate['subtitle'] = $doc['id'];
-        $resultTemplate['url'] = 'http://www.eztable.com/restaurant/'.$doc['id'];
+        $resultTemplate['arg'] = $doc['id'];
         $w->result($resultTemplate);
     }
 } else {

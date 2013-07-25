@@ -17,7 +17,7 @@ $restaurantInfo =  json_decode(curl_exec($ch), true);
 $w = new Workflow();
 $resultArray = array(
     'uid'          => 'itemuid',
-    'arg'          => 'itemarg',
+    // 'arg'          => 'itemarg',
     'valid'        => 'yes',
     'autocomplete' => 'autocomplete',
     'icon'         => 'icon.png',
@@ -26,6 +26,7 @@ $resultArray = array(
 
 if ($restaurantInfo['status'] == "OK") {
     $resultArray['subtitle'] = $restaurantInfo['data']['name'];
+    $resultArray['arg'] = $query;
 } else {
     $resultArray['subtitle'] = 'Not found!';
 }

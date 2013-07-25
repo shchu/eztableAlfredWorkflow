@@ -3,14 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>5C8A50CA-FDB9-4993-A2AB-230C2385203D</string>
 	<key>connections</key>
 	<dict>
+		<key>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C8A50CA-FDB9-4993-A2AB-230C2385203D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
+				<string>5C8A50CA-FDB9-4993-A2AB-230C2385203D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,17 +69,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.eztable.com/restaurant/{query}/</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
+			<string>5C8A50CA-FDB9-4993-A2AB-230C2385203D</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -104,12 +115,12 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</key>
+		<key>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</key>
 		<dict>
 			<key>ypos</key>
-			<real>60</real>
+			<real>230</real>
 		</dict>
-		<key>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</key>
+		<key>5C8A50CA-FDB9-4993-A2AB-230C2385203D</key>
 		<dict>
 			<key>ypos</key>
 			<real>180</real>
