@@ -17,11 +17,88 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>3E192001-3918-4E7C-B648-6E8294F487E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53CF8D63-A755-4610-8A12-1419644EE259</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>5C8A50CA-FDB9-4993-A2AB-230C2385203D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A12A12D0-CFC1-4815-8E32-741C5AAA491D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>04468A5E-16DA-4FD3-BA15-E74F52327670</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B1E3FE06-9B1E-47B4-A80D-C6606F7D519A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F00ACF0B-BB9B-448C-9ED2-C9BD3EF9891D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CBCB1BEC-2266-4485-817B-00D5D4AC556F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E3E7D36E-CE5B-4D30-B37C-C18957C68F77</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>E27BF148-FB58-402B-9E0C-3F1496CD5456</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>094A364D-3887-4140-B672-4AA09AC82AB3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>E3E7D36E-CE5B-4D30-B37C-C18957C68F77</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53CF8D63-A755-4610-8A12-1419644EE259</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F1331B18-2086-4CF3-890A-A1462B23243D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86659832-4ED8-45F1-8A8B-EDFE907D5E62</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -36,7 +113,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>EZTABLE Restaurant id</string>
+	<string>EZTABLE</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -110,15 +187,330 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>shop coupon id</string>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>php main.php "{query}"</string>
+				<key>subtext</key>
+				<string>id</string>
+				<key>title</key>
+				<string>coupon product</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>82114D9F-8987-4218-8C28-451B09E11817</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>com.google.Chrome.canary</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.eztable.me/restaurant/{query}/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>86659832-4ED8-45F1-8A8B-EDFE907D5E62</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>me id</string>
+				<key>subtext</key>
+				<string>Restaurant ID</string>
+				<key>text</key>
+				<string>EZTABLE.me</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F1331B18-2086-4CF3-890A-A1462B23243D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>me coupon</string>
+				<key>subtext</key>
+				<string>Coupon ID</string>
+				<key>text</key>
+				<string>EZTABLE.me</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B1E3FE06-9B1E-47B4-A80D-C6606F7D519A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>com.google.Chrome.canary</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://shop.eztable.me/product/coupon/{query}/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F00ACF0B-BB9B-448C-9ED2-C9BD3EF9891D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>me prepay</string>
+				<key>subtext</key>
+				<string>Prepay ID</string>
+				<key>text</key>
+				<string>EZTABLE.me</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A12A12D0-CFC1-4815-8E32-741C5AAA491D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>com.google.Chrome.canary</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://shop.eztable.me/product/prepay/{query}/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>04468A5E-16DA-4FD3-BA15-E74F52327670</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>me bundle</string>
+				<key>subtext</key>
+				<string>bundle ID</string>
+				<key>text</key>
+				<string>EZTABLE.me</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E27BF148-FB58-402B-9E0C-3F1496CD5456</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>com.google.Chrome.canary</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://shop.eztable.me/product/bundle/{query}/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>094A364D-3887-4140-B672-4AA09AC82AB3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>53CF8D63-A755-4610-8A12-1419644EE259</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>test checkout</string>
+				<key>runningsubtext</key>
+				<string>wait...</string>
+				<key>script</key>
+				<string>echo "{query}"
+#read a1 a2 &lt;&lt;&lt; "{query}"
+
+# echo http://shop.eztable.me/control/add_product_and_checkout.php?product_type=$a1&amp;product_id=$a2&amp;quantity=1</string>
+				<key>title</key>
+				<string>chekcout product</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3E192001-3918-4E7C-B648-6E8294F487E6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>com.google.Chrome.canary</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>EEE510EE-649C-4086-AC0C-070D5597758E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ez checkout</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CBCB1BEC-2266-4485-817B-00D5D4AC556F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>read a1 a2 &lt;&lt;&lt; "{query}"
+
+echo http://shop.eztable.me/control/add_product_and_checkout.php?product_type=$a1&amp;product_id=$a2&amp;quantity=1</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E3E7D36E-CE5B-4D30-B37C-C18957C68F77</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>04468A5E-16DA-4FD3-BA15-E74F52327670</key>
+		<dict>
+			<key>ypos</key>
+			<real>710</real>
+		</dict>
+		<key>094A364D-3887-4140-B672-4AA09AC82AB3</key>
+		<dict>
+			<key>ypos</key>
+			<real>830</real>
+		</dict>
 		<key>0D8F6DBB-06B3-4B4C-A58B-BC6B36DD7534</key>
 		<dict>
 			<key>ypos</key>
 			<real>230</real>
+		</dict>
+		<key>3E192001-3918-4E7C-B648-6E8294F487E6</key>
+		<dict>
+			<key>ypos</key>
+			<real>1020</real>
+		</dict>
+		<key>53CF8D63-A755-4610-8A12-1419644EE259</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
 		</dict>
 		<key>5C8A50CA-FDB9-4993-A2AB-230C2385203D</key>
 		<dict>
@@ -129,6 +521,56 @@
 		<dict>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>82114D9F-8987-4218-8C28-451B09E11817</key>
+		<dict>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>86659832-4ED8-45F1-8A8B-EDFE907D5E62</key>
+		<dict>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>A12A12D0-CFC1-4815-8E32-741C5AAA491D</key>
+		<dict>
+			<key>ypos</key>
+			<real>710</real>
+		</dict>
+		<key>B1E3FE06-9B1E-47B4-A80D-C6606F7D519A</key>
+		<dict>
+			<key>ypos</key>
+			<real>590</real>
+		</dict>
+		<key>CBCB1BEC-2266-4485-817B-00D5D4AC556F</key>
+		<dict>
+			<key>ypos</key>
+			<real>1220</real>
+		</dict>
+		<key>E27BF148-FB58-402B-9E0C-3F1496CD5456</key>
+		<dict>
+			<key>ypos</key>
+			<real>830</real>
+		</dict>
+		<key>E3E7D36E-CE5B-4D30-B37C-C18957C68F77</key>
+		<dict>
+			<key>ypos</key>
+			<real>1220</real>
+		</dict>
+		<key>EEE510EE-649C-4086-AC0C-070D5597758E</key>
+		<dict>
+			<key>ypos</key>
+			<real>1100</real>
+		</dict>
+		<key>F00ACF0B-BB9B-448C-9ED2-C9BD3EF9891D</key>
+		<dict>
+			<key>ypos</key>
+			<real>590</real>
+		</dict>
+		<key>F1331B18-2086-4CF3-890A-A1462B23243D</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

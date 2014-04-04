@@ -21,7 +21,7 @@ if (mb_strlen($query) <= 2) {
     echo $w->toXML();
     exit;
 }
-$ch = curl_init( 'http://api.localhost/v2/search/search_restaurant/2001-01-01/2/?q='.$query);
+$ch = curl_init( 'http://api.eztable.com/v2/search/search_restaurant/2001-01-01/2/?q='.$query);
 $options = array(
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_HTTPHEADER => array('Content-type: application/json') ,
